@@ -17,7 +17,7 @@ class Route
 
     #Returns all routes    
     public function getRoutes(): array
-    {
+    {        
         return $this->routes;
     }
 }

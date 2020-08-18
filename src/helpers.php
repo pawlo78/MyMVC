@@ -1,5 +1,6 @@
 <?php
 use Mvc\Exceptions\HelpersException;
+use Mvc\Http\Response\Response;
 
 
 //funkcja pomocnicza do zmiennych srodowiskowych .env
@@ -26,4 +27,8 @@ function config($config) {
     } catch(HelpersException $ex) {
         exit($ex->report());
     }
+}
+
+function response() {
+    return new Response();
 }
